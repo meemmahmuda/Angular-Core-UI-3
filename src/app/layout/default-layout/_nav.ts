@@ -8,15 +8,15 @@ export const navItems: INavData[] = [
       style: 'color: #fff; font-weight: bold; font-size: 11px; font-family: "Noto Sans Bengali", sans-serif; text-shadow: 1px 1px #000;'
     }
   },
-  {
-    name: 'Dashboard',
-    url: '/dashboard',
-    iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
-  },
+  // {
+  //   name: 'Dashboard',
+  //   url: '/dashboard',
+  //   iconComponent: { name: 'cil-speedometer' },
+  //   badge: {
+  //     color: 'info',
+  //     text: 'NEW'
+  //   }
+  // },
   {
     title: true,
     name: 'Theme'
