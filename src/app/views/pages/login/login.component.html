@@ -35,10 +35,23 @@
                     [(ngModel)]="selectedSection"
                     name="section"
                     style="background-color: #fff; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;">
+
                     <option *ngIf="selectedWing === 'select'" value="select"> </option>
-                    <option *ngIf="selectedWing !== '' && selectedWing !== 'hotel'" value="holding">Holding Tax</option>
+
+                    <option *ngIf="selectedWing !== '' && selectedWing !== 'hotel' && selectedWing !=='market'" value="holding">Holding Tax</option>
+
                     <option *ngIf="selectedWing === 'hotel'" value="hotel">Hotel Tax</option>
-                    <option *ngIf="selectedWing !== 'hotel' && selectedWing !== ''" value="holding">Trade License</option>
+
+                    <option *ngIf="selectedWing !== 'hotel' && selectedWing !== '' && selectedWing !=='market'" value="holding">Trade License</option>
+
+                    <option  *ngIf="selectedWing === 'market'" value="market" >Market Salami-Rent</option>
+
+                    <option *ngIf="selectedWing === 'market'" value="market" >Vehicle/Wheel Tax</option>
+
+                    <option *ngIf="selectedWing === 'market'" value="market" >Entertainment Tax</option>
+
+                    <option *ngIf="selectedWing === 'market'" value="market" >Other</option>
+
                   </select>
                 </form>
   

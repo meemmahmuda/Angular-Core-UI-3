@@ -30,6 +30,8 @@ export class LoginComponent {
       this.selectedSection = 'hotel';  
     } else if (this.selectedWing === '') {
       this.selectedSection = '';  
+    } else if (this.selectedWing === 'market') {
+      this.selectedSection = 'market'; 
     } else {
       this.selectedSection = '';  // Reset the section if no valid wing is selected
     }
