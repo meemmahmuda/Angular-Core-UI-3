@@ -13,9 +13,40 @@
     min-height: 100%;
   }
 
+  .sidebar-nav .nav-link:hover{
+    background-color: transparent;
+  }
+
   //.sidebar-nav {
   //  scrollbar-color: var(--cui-gray-500, #444) transparent;
   //}
+}
+
+c-sidebar{
+  background-color: #00695C;
+}
+
+c-sidebar-brand{
+  display: flex;
+  align-items: center;
+
+  span{
+    font-size: 22px;
+  }
+}
+
+.paw{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecf0f1;
+  border: 1px solid #ecf0f1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 // ng-scrollbar css variables
