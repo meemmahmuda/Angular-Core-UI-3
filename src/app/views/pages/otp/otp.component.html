@@ -13,34 +13,29 @@
               <c-card-body >
                 <form cForm>
   
-                  <h1 style="color: #555; font-size: 32px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 40px;">North City Corporation</h1>
+                  <h1 style="color: #555; font-size: 24px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 40px;">Dhaka North City Corporation</h1>
   
-                  <p style="color: #555; font-size: 32px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 20px;">e-Revenue Management</p>
-  
-                  <select style="background-color: #fff; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;" name="" id="">Select Section
-                    <option value="" >Select Section</option>
-                    <option value="" >Holding Tax</option>
-                    <option value="" >Market Salami-Rent</option>
-                    <option value="" >Tread License</option>
-                    <option value="" >Vehicle/Wheel Tax</option>
-                    <option value="" >Entertainment Tax</option>
-                    <option value="" >Other</option>
-                    <option value="" >Accounts</option>
-                  </select>
+                  <p style="color: #555; font-size: 24px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 20px;">e-Revenue Management</p>
   
                   <c-input-group class="mb-3">
                     <!-- <span cInputGroupText>
                       <svg cIcon name="cilUser"></svg>
                     </span> -->
-                    <input class="user" style="background-color: #eaeaea; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;" autoComplete="username"  placeholder="Username" />
+                    <input class="otp" style="background-color: #eaeaea; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;" autoComplete="username"  placeholder="OTP" />
                   </c-input-group>
   
                   <c-row>
                     <c-col xs="12">
-                      <button class="login-btn" [routerLink]="['/otp-verification']">
-                        Generate OTP
+                      <button class="login-btn" [routerLink]="['/dashboard']">
+                        VERIFY
                       </button>
                     </c-col>
+
+                    <c-col xs="12">
+                        <button class="resend-btn float-end" >
+                          Resend OTP
+                        </button>
+                      </c-col>
                     
                   </c-row>
                 </form>

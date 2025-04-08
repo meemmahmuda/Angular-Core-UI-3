@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './layout';
-import {ForgetpassComponent} from './views/pages/forgetpass/forgetpass.component';
 
 export const routes: Routes = [
   {
@@ -87,6 +86,13 @@ export const routes: Routes = [
     loadComponent: () => import('./views/pages/forgetpass/forgetpass.component').then(m => m.ForgetpassComponent),
     data: {
       title: 'Forget Page'
+    }
+  },
+  {
+    path: 'otp-verification',
+    loadComponent: () => import('./views/pages/otp/otp.component').then(m => m.OtpComponent),
+    data: {
+      title: 'OTP Verification'
     }
   },
   {
