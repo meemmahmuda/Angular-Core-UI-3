@@ -25,6 +25,10 @@ body {
   background-color: transparent;
 }
 
+.sidebar-nav .nav-group.show .nav-group-toggle{
+  background: linear-gradient(#0097A7, #0097A7), #0097A7;
+}
+
 .sidebar-header {
   .nav-underline-border {
     --cui-nav-underline-border-link-padding-x: 1rem;
