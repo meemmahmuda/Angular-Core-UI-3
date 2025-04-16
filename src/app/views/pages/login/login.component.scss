@@ -1,0 +1,58 @@
+.user {
+    border: 0;
+    margin-top: 20px;
+    color: #000;
+    outline: none;
+    text-align: center;
+  
+    &::placeholder {
+      color: #555;
+      font-size: 19px;
+      font-family: Arial;
+      text-align: center;
+    }
+  }
+  
+  .pass {
+    border: 0;
+    margin-top: 20px;
+    color: #000;
+    outline: none;
+    text-align: center;
+  
+    &::placeholder {
+      color: #555;
+      font-size: 19px;
+      font-family: Arial;
+      text-align: center;
+    }
+  }
+  
+  .login-btn {
+    display: block;
+    margin: auto;
+    background-color: #127da7;
+    padding: 5px 35px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+  }
+  
+  .forget-pass {
+    font-size: 16px;
+    color: #555;
+    background-color: transparent;
+    border: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding-top: 30px;
+    display: block;
+    text-decoration: none;
+  
+    &:hover {
+      color: #127da7;
+    }
+  }
+  
