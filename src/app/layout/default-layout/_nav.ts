@@ -68,7 +68,7 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'ড্যাশবোর্ড',
-        url: '/buttons/buttons',
+        url: '/dashboard',
         attributes: {
           style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
@@ -89,7 +89,7 @@ export const navItems: INavData[] = [
         attributes: {
           style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
-        url: '/forms/form-control',
+        url: '/charts',
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
       {
@@ -240,6 +240,56 @@ export const navItems: INavData[] = [
         },
         icon: 'nav-icon-bullet'
       }  
+    ]
+  },
+  {
+    name: 'সেটিংস',
+    url: '/notifications',
+    attributes: {
+      style: 'color: #fff; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+    },
+    icon: 'fa-solid fa-chart-column',  // Font Awesome icon
+    children: [
+      {
+        name: 'নতুন ব্যবহারকারী',
+        url: '/notifications/alerts',
+        attributes: {
+          style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+        },
+        icon: 'nav-icon-bullet',  // Font Awesome icon
+      },
+      {
+        name: 'ইউজার এক্সেস কন্ট্রোল',
+        url: '/notifications/badges',
+        attributes: {
+          style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+        },
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'ইউজার সমূহ',
+        url: '/notifications/modal',
+        attributes: {
+          style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+        },
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'আদায় টার্গেট',
+        url: '/notifications/toasts',
+        attributes: {
+          style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+        },
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'আপডেট পাসওয়ার্ড',
+        url: '/notifications/toasts',
+        attributes: {
+          style: 'color: #fff; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+        },
+        icon: 'nav-icon-bullet'
+      }
     ]
   },
   {

@@ -11,14 +11,15 @@ import { getStyle } from '@coreui/utils';
 import { ChartjsComponent } from '@coreui/angular-chartjs';
 import { RouterLink } from '@angular/router';
 import { IconDirective } from '@coreui/icons-angular';
-import { RowComponent, ColComponent, WidgetStatAComponent, TemplateIdDirective, ThemeDirective, DropdownComponent, ButtonDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective, DropdownDividerDirective } from '@coreui/angular';
+import { RowComponent, ColComponent, WidgetStatAComponent, TemplateIdDirective, ThemeDirective, DropdownComponent, ButtonDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective, DropdownDividerDirective, CardComponent, CardModule } from '@coreui/angular';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-widgets-dropdown',
     templateUrl: './widgets-dropdown.component.html',
     styleUrls: ['./widgets-dropdown.component.scss'],
     changeDetection: ChangeDetectionStrategy.Default,
-    imports: [RowComponent, ColComponent, WidgetStatAComponent, TemplateIdDirective, IconDirective, ThemeDirective, DropdownComponent, ButtonDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective, RouterLink, DropdownDividerDirective, ChartjsComponent]
+    imports: [RowComponent, ColComponent, WidgetStatAComponent, TemplateIdDirective, IconDirective, ThemeDirective, DropdownComponent, ButtonDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective, RouterLink, DropdownDividerDirective, ChartjsComponent, RouterModule]
 })
 export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 
@@ -181,7 +182,8 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 @Component({
     selector: 'app-chart-sample',
     template: '<c-chart type="line" [data]="data" [options]="options" width="300" #chart></c-chart>',
-    imports: [ChartjsComponent]
+    imports: [ChartjsComponent, CardModule, CardComponent],
+    
 })
 export class ChartSample implements AfterViewInit {
 

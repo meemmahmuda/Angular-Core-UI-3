@@ -7,6 +7,11 @@ import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from '../../../icons/icon-subset';
 import { WidgetsDropdownComponent } from './widgets-dropdown.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { CardComponent } from '@coreui/angular';
+import { CardModule } from '@coreui/angular';
+import { ChartsComponent } from '../../charts/charts.component';
+import { Component, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 describe('WidgetsDropdownComponent', () => {
   let component: WidgetsDropdownComponent;

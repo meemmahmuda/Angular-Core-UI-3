@@ -1,21 +1,50 @@
+<div style="display: flex; justify-content: space-between;">
+  <div style="background-color: #17a2b8; width: 340px; height: 120px; border-radius: 10px;">
+  <h4 style="color: #fff;">৩২৪৬৬৫</h4>
+  <h2 style="color: #fff;">মোট হোল্ডিং সংখ্যা</h2>
+  <button  [routerLink]="['/totalholding']" class="moreinfo">More info
+    <i class="fa-regular fa-circle-right"></i>
+  </button>
+  </div>
+
+  <div style="background-color: #28a745; width: 340px; height: 120px; border-radius: 10px; margin-left: 50px;">
+    <h4 style="color: #fff;">৩২৪৬৬৫</h4>
+    <h2 style="color: #fff;">নতুন হোল্ডিং সংখ্যা</h2>
+    <button class="moreinfo-btn">More info
+      <i class="fa-regular fa-circle-right"></i>
+    </button>
+    </div>
+
+    
+    <c-col xs="2" lg="3">
+      <c-card class="mb-4">
+        
+   
+          <c-chart type="doughnut" [data]="chartDoughnutData" [options]="options" />
+       <h6 style="text-align: center;">আদায়/বকেয়া</h6>
+      </c-card>
+    </c-col>
+</div>
+
+
 <c-row>
-  <c-col xs="12">
+  <!-- <c-col xs="12">
     <app-docs-callout href="charts">
       CoreUI Angular wrapper component for Chart.js 4.4, the most popular charting library.
       <br>
     </app-docs-callout>
-  </c-col>
-  <c-col xs="12" lg="6">
+  </c-col> -->
+  <c-col xs="12" lg="10">
     <c-card class="mb-4">
       <c-card-header>
-        Bar Chart
+        জোন অনুযায়ী বকেয়া/আদায়
       </c-card-header>
       <c-card-body>
         <c-chart type="bar" [data]="chartBarData" [options]="options" />
       </c-card-body>
     </c-card>
   </c-col>
-  <c-col xs="12" lg="6">
+  <!-- <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
         Line Chart
@@ -24,9 +53,9 @@
         <c-chart type="line" [data]="chartLineData" [options]="options" />
       </c-card-body>
     </c-card>
-  </c-col>
+  </c-col> -->
 </c-row>
-<c-row>
+<!-- <c-row>
   <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
@@ -69,4 +98,4 @@
       </c-card-body>
     </c-card>
   </c-col>
-</c-row>
+</c-row> -->

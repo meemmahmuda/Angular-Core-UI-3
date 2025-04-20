@@ -111,6 +111,13 @@ export const routes: Routes = [
         }
       },
       {
+        path: 'totalholding',
+        loadComponent: () => import('../pages/totalholding/totalholding.component').then(m => m.TotalholdingComponent),
+        data: {
+          title: 'totalholding'
+        }
+      },
+      {
         path: 'tooltips',
         loadComponent: () => import('./tooltips/tooltips.component').then(m => m.TooltipsComponent),
         data: {

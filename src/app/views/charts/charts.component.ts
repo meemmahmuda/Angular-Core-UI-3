@@ -3,35 +3,93 @@ import { ChartData } from 'chart.js';
 import { ChartjsComponent } from '@coreui/angular-chartjs';
 import { RowComponent, ColComponent, TextColorDirective, CardComponent, CardHeaderComponent, CardBodyComponent } from '@coreui/angular';
 import { DocsCalloutComponent } from '@docs-components/public-api';
+import { WidgetStatAComponent } from '@coreui/angular';
+import { RouterModule } from '@angular/router';
+import { DropdownModule } from '@coreui/angular';
+
 
 @Component({
     selector: 'app-charts',
     templateUrl: './charts.component.html',
     styleUrls: ['./charts.component.scss'],
-    imports: [RowComponent, ColComponent, DocsCalloutComponent, TextColorDirective, CardComponent, CardHeaderComponent, CardBodyComponent, ChartjsComponent]
+    imports: [RowComponent, ColComponent, DocsCalloutComponent, TextColorDirective, CardComponent, CardHeaderComponent, CardBodyComponent, ChartjsComponent, WidgetStatAComponent, RouterModule, DropdownModule]
 })
 export class ChartsComponent {
-
+  data: any;
   options = {
     maintainAspectRatio: false
   };
 
-  months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  months = ['১০ সাতারকুল(৪১৩৪)', '৬ উত্তরা(১২০৮৭)', '৭ দক্ষিণখান(৩৬৫১)', '৮ উত্তরখান(১৫০১)', '৯ ভাটারা(২৪২৮)', 'বাজার শাখা(০)', '১ উত্তরা(৩১৯২৬)', '২ মিরপুর(৫৭১২৭)', '৩ মহাখালী(৭১৭১৯)', '৪ মিরপুর(৭০০৬১)', '৫ কারওরান বাজার(৭০০৩১)'];
 
-  chartBarData: ChartData = {
-    labels: [...this.months].slice(0, 7),
+  chartBarData: ChartData<'bar'> = {
+    labels: [
+      '১০ সাতারকুল(৪১৩৪)', '৬ উত্তরা(১২০৮৭)', '৭ দক্ষিণখান(৩৬৫১)',
+      '৮ উত্তরখান(১৫০১)', '৯ ভাটারা(২৪২৮)', 'বাজার শাখা(০)',
+      '১ উত্তরা(৩১৯২৬)', '২ মিরপুর(৫৭১২৭)', '৩ মহাখালী(৭১৭১৯)',
+      '৪ মিরপুর(৭০০৬১)', '৫ কারওরান বাজার(৭০০৩১)'
+    ],
     datasets: [
       {
-        label: 'GitHub Commits',
-        backgroundColor: '#f87979',
-        data: [40, 20, 12, 39, 17, 42, 79]
+        label: 'Zone wise collection',
+        data: [4134, 12087, 3651, 1501, 2428, 0, 31926, 57127, 71719, 70061, 70031],
+        backgroundColor: [
+          '#f87979', '#f87979', '#4a90e2', '#f87979', '#f87979', '#f87979',
+          '#cccccc', '#cccccc', '#cccccc', '#cccccc', '#cccccc'
+        ]
       }
     ]
-  };
+  };  
 
-  // chartBarOptions = {
-  //   maintainAspectRatio: false,
-  // };
+  chartBarOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: function (value: number) {
+            // 👇 This will format: 10000 -> 100, 20000 -> 200, etc.
+            return value / 100;
+          },
+          stepSize: 10000, // actual value step
+        },
+        title: {
+          display: true,
+          text: 'Amount (in hundreds)'
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12
+          }
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        display: true
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context: any) {
+            // tooltip value also divided by 100
+            let label = context.dataset.label || '';
+            if (label) {
+              label += ': ';
+            }
+            if (context.parsed.y !== null) {
+              label += (context.parsed.y / 100);
+            }
+            return label;
+          }
+        }
+      }
+    }
+  };
+  
+  
 
   chartLineData: ChartData = {
     labels: [...this.months].slice(0, 7),
@@ -60,11 +118,11 @@ export class ChartsComponent {
   };
 
   chartDoughnutData: ChartData = {
-    labels: ['VueJs', 'EmberJs', 'ReactJs', 'Angular'],
+    // labels: ['VueJs', 'EmberJs', 'ReactJs', 'Angular'],
     datasets: [
       {
         backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-        data: [40, 20, 80, 10]
+        data: [90, 10]
       }
     ]
   };

@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './layout';
+import { TotalholdingComponent } from './views/pages/totalholding/totalholding.component';
 
 export const routes: Routes = [
   {
@@ -17,6 +18,10 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/routes').then((m) => m.routes)
+      },
+      {
+        path: 'totalholding',
+        component: TotalholdingComponent,
       },
       {
         path: 'theme',
@@ -102,5 +107,6 @@ export const routes: Routes = [
       title: 'Register Page'
     }
   },
+
   { path: '**', redirectTo: 'dashboard' }
 ];
