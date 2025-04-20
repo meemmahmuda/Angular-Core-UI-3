@@ -1,1 +1,87 @@
-<p>হোল্ডিং সংখ্যা</p>
+<h3>হোল্ডিং সংখ্যা</h3>
+
+<table class="holding-table">
+  <tr>
+    <th></th>
+    <th>Zone</th>
+    <th>Count</th>
+  </tr>
+  <tr>
+    <td (click)="toggle('zone')" class="toggle-btn">{{ isOpen.zone ? '−' : '+' }}</td>
+    <td>১ উত্তর</td>
+    <td>31930</td>
+  </tr>
+
+  <tr *ngIf="isOpen.zone">
+    <td></td>
+    <td colspan="2">
+      <table>
+        <tr>
+          <th></th>
+          <th>Ward</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td (click)="toggle('ward')" class="toggle-btn">{{ isOpen.ward ? '−' : '+' }}</td>
+          <td>1</td>
+          <td>20336</td>
+        </tr>
+
+        <tr *ngIf="isOpen.ward">
+          <td></td>
+          <td colspan="2">
+            <table>
+              <tr>
+                <th></th>
+                <th>Sector</th>
+                <th>Count</th>
+              </tr>
+              <tr>
+                <td (click)="toggle('sector')" class="toggle-btn">{{ isOpen.sector ? '−' : '+' }}</td>
+                <td>সেক্টর: ১২</td>
+                <td>1</td>
+              </tr>
+
+              <tr *ngIf="isOpen.sector">
+                <td></td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>Area</th>
+                      <th>Count</th>
+                    </tr>
+                    <tr>
+                      <td (click)="toggle('area')" class="toggle-btn">{{ isOpen.area ? '−' : '+' }}</td>
+                      <td>-</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr *ngIf="isOpen.area">
+                      <td></td>
+                      <td colspan="2">
+                        <table>
+                          <tr>
+                            <th>Road</th>
+                            <th>Count</th>
+                          </tr>
+                          <tr>
+                            <td>রোড: ১২</td>
+                            <td>1</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                  </table>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
