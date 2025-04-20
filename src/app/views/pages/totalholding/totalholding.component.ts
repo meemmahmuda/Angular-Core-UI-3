@@ -10,10 +10,14 @@ import { CommonModule } from '@angular/common'; // ✅ Import CommonModule
 })
 export class TotalholdingComponent {
   isOpen = {
-    zone: false,
-    ward: false,
-    sector: false,
-    area: false
+    zone1: false,
+    ward1: false,
+    sector1: false,
+    area1: false,
+    zone2: false,
+    ward2: false,
+    sector2: false,
+    area2: false
   };
 
   toggle(section: keyof typeof this.isOpen) {
