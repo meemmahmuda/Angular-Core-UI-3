@@ -160,4 +160,82 @@
       </table>
     </td>
   </tr>
+
+    <!-- 	২ মিরপুর Row -->
+    <tr>
+      <td (click)="toggle('zone3')" class="toggle-btn">{{ isOpen.zone3 ? '−' : '+' }}</td>
+      <td>২ মিরপুর</td>
+      <td>4134</td>
+    </tr>
+  
+    <tr *ngIf="isOpen.zone3">
+      <td></td>
+      <td colspan="2">
+        <table>
+          <tr>
+            <th></th>
+            <th>Ward</th>
+            <th>Count</th>
+          </tr>
+          <tr>
+            <td (click)="toggle('ward3')" class="toggle-btn">{{ isOpen.ward3 ? '−' : '+' }}</td>
+            <td>9</td>
+            <td>844</td>
+          </tr>
+  
+          <tr *ngIf="isOpen.ward3">
+            <td></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Sector</th>
+                  <th>Count</th>
+                </tr>
+                <tr>
+                  <td (click)="toggle('sector3')" class="toggle-btn">{{ isOpen.sector3 ? '−' : '+' }}</td>
+                  <td>সেকশনঃ ১</td>
+                  <td>92</td>
+                </tr>
+  
+                <tr *ngIf="isOpen.sector3">
+                  <td></td>
+                  <td colspan="2">
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th>Area</th>
+                        <th>Count</th>
+                      </tr>
+                      <tr>
+                        <td (click)="toggle('area3')" class="toggle-btn">{{ isOpen.area3 ? '−' : '+' }}</td>
+                        <td>ব্লক: জি, আফতাবনগর</td>
+                        <td>4</td>
+                      </tr>
+  
+                      <tr *ngIf="isOpen.area3">
+                        <td></td>
+                        <td colspan="2">
+                          <table>
+                            <tr>
+                              <th>Road</th>
+                              <th>Count</th>
+                            </tr>
+                            <tr>
+                              <td>রোড: ৩</td>
+                              <td>6</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
 </table>

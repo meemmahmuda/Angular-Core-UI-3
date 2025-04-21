@@ -17,7 +17,11 @@ export class TotalholdingComponent {
     zone2: false,
     ward2: false,
     sector2: false,
-    area2: false
+    area2: false,
+    zone3: false,
+    ward3: false,
+    sector3: false,
+    area3: false
   };
 
   toggle(section: keyof typeof this.isOpen) {
