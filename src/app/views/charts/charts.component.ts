@@ -49,10 +49,9 @@ export class ChartsComponent {
         beginAtZero: true,
         ticks: {
           callback: function (value: number) {
-            // 👇 This will format: 10000 -> 100, 20000 -> 200, etc.
             return value / 100;
           },
-          stepSize: 10000, // actual value step
+          stepSize: 10000, 
         },
         title: {
           display: true,
@@ -74,7 +73,6 @@ export class ChartsComponent {
       tooltip: {
         callbacks: {
           label: function(context: any) {
-            // tooltip value also divided by 100
             let label = context.dataset.label || '';
             if (label) {
               label += ': ';
@@ -118,7 +116,6 @@ export class ChartsComponent {
   };
 
   chartDoughnutData: ChartData = {
-    // labels: ['VueJs', 'EmberJs', 'ReactJs', 'Angular'],
     datasets: [
       {
         backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
