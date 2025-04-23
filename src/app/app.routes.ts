@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './layout';
 import { TotalholdingComponent } from './views/pages/totalholding/totalholding.component';
+import { NewholdingComponent } from './views/pages/newholding/newholding.component';
 
 export const routes: Routes = [
   {
@@ -22,6 +23,10 @@ export const routes: Routes = [
       {
         path: 'totalholding',
         component: TotalholdingComponent,
+      },
+      {
+        path: 'newholding',
+        component: NewholdingComponent,
       },
       {
         path: 'theme',

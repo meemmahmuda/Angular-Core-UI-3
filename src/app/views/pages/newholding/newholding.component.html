@@ -1,0 +1,241 @@
+<h3>হোল্ডিং সংখ্যা</h3>
+
+<table class="holding-table">
+  <tr>
+    <th></th>
+    <th>Zone</th>
+    <th>Count</th>
+  </tr>
+  
+  <!-- ১ উত্তর Row -->
+  <tr>
+    <td (click)="toggle('zone1')" class="toggle-btn">{{ isOpen.zone1 ? '−' : '+' }}</td>
+    <td>১ উত্তর</td> 
+    <td>31930</td>
+  </tr>
+
+  <tr *ngIf="isOpen.zone1">
+    <td></td>
+    <td colspan="2">
+      <table>
+        <tr>
+          <th></th>
+          <th>Ward</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td (click)="toggle('ward1')" class="toggle-btn">{{ isOpen.ward1 ? '−' : '+' }}</td>
+          <td>1</td>
+          <td>20336</td>
+        </tr>
+
+        <tr *ngIf="isOpen.ward1">
+          <td></td>
+          <td colspan="2">
+            <table>
+              <tr>
+                <th></th>
+                <th>Sector</th>
+                <th>Count</th>
+              </tr>
+              <tr>
+                <td (click)="toggle('sector1')" class="toggle-btn">{{ isOpen.sector1 ? '−' : '+' }}</td>
+                <td>সেক্টর: ১২</td>
+                <td>1</td>
+              </tr>
+
+              <tr *ngIf="isOpen.sector1">
+                <td></td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>Area</th>
+                      <th>Count</th>
+                    </tr>
+                    <tr>
+                      <td (click)="toggle('area1')" class="toggle-btn">{{ isOpen.area1 ? '−' : '+' }}</td>
+                      <td>-</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr *ngIf="isOpen.area1">
+                      <td></td>
+                      <td colspan="2">
+                        <table>
+                          <tr>
+                            <th>Road</th>
+                            <th>Count</th>
+                          </tr>
+                          <tr>
+                            <td>রোড: ১২</td>
+                            <td>1</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- ১০ সাতারকুল Row -->
+  <tr>
+    <td (click)="toggle('zone2')" class="toggle-btn">{{ isOpen.zone2 ? '−' : '+' }}</td>
+    <td>১০ সাতারকুল</td>
+    <td>4134</td>
+  </tr>
+
+  <tr *ngIf="isOpen.zone2">
+    <td></td>
+    <td colspan="2">
+      <table>
+        <tr>
+          <th></th>
+          <th>Ward</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td (click)="toggle('ward2')" class="toggle-btn">{{ isOpen.ward2 ? '−' : '+' }}</td>
+          <td>37</td>
+          <td>844</td>
+        </tr>
+
+        <tr *ngIf="isOpen.ward2">
+          <td></td>
+          <td colspan="2">
+            <table>
+              <tr>
+                <th></th>
+                <th>Sector</th>
+                <th>Count</th>
+              </tr>
+              <tr>
+                <td (click)="toggle('sector2')" class="toggle-btn">{{ isOpen.sector2 ? '−' : '+' }}</td>
+                <td>সেকশনঃ ১</td>
+                <td>92</td>
+              </tr>
+
+              <tr *ngIf="isOpen.sector2">
+                <td></td>
+                <td colspan="2">
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>Area</th>
+                      <th>Count</th>
+                    </tr>
+                    <tr>
+                      <td (click)="toggle('area2')" class="toggle-btn">{{ isOpen.area2 ? '−' : '+' }}</td>
+                      <td>ব্লক: জি, আফতাবনগর</td>
+                      <td>4</td>
+                    </tr>
+
+                    <tr *ngIf="isOpen.area2">
+                      <td></td>
+                      <td colspan="2">
+                        <table>
+                          <tr>
+                            <th>Road</th>
+                            <th>Count</th>
+                          </tr>
+                          <tr>
+                            <td>রোড: ৩</td>
+                            <td>6</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+    <!-- 	২ মিরপুর Row -->
+    <tr>
+      <td (click)="toggle('zone3')" class="toggle-btn">{{ isOpen.zone3 ? '−' : '+' }}</td>
+      <td>২ মিরপুর</td>
+      <td>4134</td>
+    </tr>
+  
+    <tr *ngIf="isOpen.zone3">
+      <td></td>
+      <td colspan="2">
+        <table>
+          <tr>
+            <th></th>
+            <th>Ward</th>
+            <th>Count</th>
+          </tr>
+          <tr>
+            <td (click)="toggle('ward3')" class="toggle-btn">{{ isOpen.ward3 ? '−' : '+' }}</td>
+            <td>9</td>
+            <td>844</td>
+          </tr>
+  
+          <tr *ngIf="isOpen.ward3">
+            <td></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Sector</th>
+                  <th>Count</th>
+                </tr>
+                <tr>
+                  <td (click)="toggle('sector3')" class="toggle-btn">{{ isOpen.sector3 ? '−' : '+' }}</td>
+                  <td>সেকশনঃ ১</td>
+                  <td>92</td>
+                </tr>
+  
+                <tr *ngIf="isOpen.sector3">
+                  <td></td>
+                  <td colspan="2">
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th>Area</th>
+                        <th>Count</th>
+                      </tr>
+                      <tr>
+                        <td (click)="toggle('area3')" class="toggle-btn">{{ isOpen.area3 ? '−' : '+' }}</td>
+                        <td>ব্লক: জি, আফতাবনগর</td>
+                        <td>4</td>
+                      </tr>
+  
+                      <tr *ngIf="isOpen.area3">
+                        <td></td>
+                        <td colspan="2">
+                          <table>
+                            <tr>
+                              <th>Road</th>
+                              <th>Count</th>
+                            </tr>
+                            <tr>
+                              <td>রোড: ৩</td>
+                              <td>6</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+</table>
