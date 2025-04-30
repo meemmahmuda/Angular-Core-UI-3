@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common'; // ✅ Import CommonModule
 export class TotalholdingComponent {
   isOpen = {
     zone1:    false,
-    ward1:    false
+    ward1:    false,
     sector1:  false,
     area1:    false,
     zone2:    false,
