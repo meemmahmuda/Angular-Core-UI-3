@@ -14,7 +14,11 @@
   }
 
   .sidebar-nav .nav-link:hover{
-    background-color: transparent;
+    background: linear-gradient(#1b9e3e, #0097A7), #1b9e3e;
+  }
+
+  .sidebar-nav .nav-group-toggle::after{
+    background-color: #609513;
   }
 
   //.sidebar-nav {
@@ -23,7 +27,7 @@
 }
 
 c-sidebar{
-  background-color: #00695C;
+  background-color: #61951300;
 }
 
 c-sidebar-brand{
@@ -40,7 +44,7 @@ c-sidebar-brand{
   justify-content: center;
   align-items: center;
   color: #ecf0f1;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #609513;
   border-radius: 50%;
   width: 40px;
   height: 40px;
