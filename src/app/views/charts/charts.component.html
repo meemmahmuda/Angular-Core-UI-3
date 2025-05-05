@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content:center;">
   <div style="background-color: #17a2b8; width: 340px; height: 120px; border-radius: 10px;">
   <h4 style="color: #fff;">৩২৪৬৬৫</h4>
   <h2 style="color: #fff;">মোট হোল্ডিং সংখ্যা</h2>
@@ -16,16 +16,19 @@
     </div>
 
     
-    <c-col xs="2" lg="3">
-      <c-card class="mb-4">
-        
-   
-          <c-chart type="doughnut" [data]="chartDoughnutData" [options]="options" />
-       <h6 style="text-align: center;">আদায়/বকেয়া</h6>
-      </c-card>
-    </c-col>
+
 </div>
 
+<div style="display: flex; justify-content:center;" class="mt-3">
+<c-col xs="2" lg="3">
+  <c-card class="mb-4">
+    
+
+      <c-chart type="doughnut" [data]="chartDoughnutData" [options]="options" />
+   <h6 style="text-align: center;">আদায়/বকেয়া</h6>
+  </c-card>
+</c-col>
+</div>
 
 <c-row>
   <!-- <c-col xs="12">
@@ -34,6 +37,8 @@
       <br>
     </app-docs-callout>
   </c-col> -->
+
+  <div style="display: flex; justify-content: center;">
   <c-col xs="12" lg="10">
     <c-card class="mb-4">
       <c-card-header>
@@ -44,6 +49,7 @@
       </c-card-body>
     </c-card>
   </c-col>
+</div>
   <!-- <c-col xs="12" lg="6">
     <c-card class="mb-4">
       <c-card-header>
@@ -55,6 +61,7 @@
     </c-card>
   </c-col> -->
 </c-row>
+
 <!-- <c-row>
   <c-col xs="12" lg="6">
     <c-card class="mb-4">

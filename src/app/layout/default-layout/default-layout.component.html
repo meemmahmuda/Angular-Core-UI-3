@@ -11,8 +11,8 @@
     <c-sidebar-brand [routerLink]="[]">
       <!-- <svg [class]="{icon: false}" cIcon class="sidebar-brand-full" height="32" name="logo" title="CoreUI Logo"></svg> -->
 
-      <a class="paw" href=""><i style="color: #609513;" class="fa-solid fa-paw"></i></a>
-      <span style="color: #609513;">রাজস্ব বিভাগ</span>
+      <a class="paw" href=""><i style="color: #ffffff; z-index: 111;" class="fa-solid fa-paw"></i></a>
+      <span style="color: #ffffff;">রাজস্ব বিভাগ</span>
 
       <!-- <svg cIcon class="sidebar-brand-narrow" height="32" name="signet" title="CoreUI Logo"></svg> -->
     </c-sidebar-brand>
@@ -30,7 +30,7 @@
 </c-sidebar>
 
 <!--main-->
-<div class="wrapper d-flex flex-column min-vh-100">
+<div class="wrapper ">
   <!--app-header-->
   <app-default-header
     [cShadowOnScroll]="'sm'"
@@ -39,7 +39,7 @@
     sidebarId="sidebar1"
   />
   <!--app-body-->
-  <div class="body flex-grow-1">
+  <div class="">
     <c-container breakpoint="lg" class="h-auto px-4">
       <router-outlet />
     </c-container>

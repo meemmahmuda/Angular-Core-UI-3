@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+  // width: 100%;
   padding-inline: var(--cui-sidebar-occupy-start, 0) var(--cui-sidebar-occupy-end, 0);
   will-change: auto;
   @include transition(padding .15s);
@@ -38,7 +38,7 @@ body {
 }
 
 .border-end{
-  --cui-border-color: #fff !important;
+  --cui-border-color: #ffffff00 !important;
 }
 
 
@@ -66,8 +66,9 @@ body {
   }
 }
 .sidebar-toggler::before{
-  background-color: #fff;
+  background-color: #61951300;
   opacity: 100%;
+  display: none;
 }
 
 .header > .container-fluid + .container-fluid {
@@ -78,6 +79,8 @@ body {
   display: block !important;
 
   min-height: calc(3rem + 1px); // stylelint-disable-line function-disallowed-list
+  background: transparent;
+  border: none;
 }
 
 @include color-mode(dark) {

@@ -11,25 +11,27 @@ export const navItems: INavData[] = [
   {
     name: 'মাস্টার',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif'
+      class: 'custom-title-class',
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif'
     },
-    url: '/base',
+    url: '#',
     icon: 'fa-solid fa-chart-column',   // Font Awesome icon
      // Font Awesome icon
     children: [
       {
         name: 'নতুন অঞ্চল',
-        url: '/base/accordion',
+        url: '#',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
-        icon: 'nav-icon-bullet',  // Font Awesome icon
+        icon: 'nav-icon-bullet', 
+        
       },
       {
         name: 'নতুন ওয়ার্ড',
-        url: '/base/breadcrumbs',
+        url: '#',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -37,7 +39,7 @@ export const navItems: INavData[] = [
         name: 'নতুন সেক্টর',
         url: '/base/cards',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -45,7 +47,7 @@ export const navItems: INavData[] = [
         name: 'নতুন এরিয়া',
         url: '/base/carousel',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -53,7 +55,7 @@ export const navItems: INavData[] = [
         name: 'নতুন রোড',
         url: '/base/collapse',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       }
@@ -64,14 +66,14 @@ export const navItems: INavData[] = [
     url: '/buttons',
     icon: 'fa-solid fa-house-chimney',  // Font Awesome icon
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif'
     },
     children: [
       {
         name: 'ড্যাশবোর্ড',
         url: '/charts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       }
@@ -81,14 +83,14 @@ export const navItems: INavData[] = [
     name: ' আবেদন বিষয়ক',
     url: '/forms',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     icon: 'fa-solid fa-square-pen',  // Font Awesome icon
     children: [
       {
         name: 'নতুন ই-হোল্ডিং নাম্বারের আবেদন',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         url: '/charts',
         icon: 'nav-icon-bullet',  // Font Awesome icon
@@ -96,7 +98,7 @@ export const navItems: INavData[] = [
       {
         name: 'নতুন আবেদন অনুসন্ধান',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         url: '/forms/select',
         icon: 'nav-icon-bullet',  // Font Awesome icon
@@ -105,7 +107,7 @@ export const navItems: INavData[] = [
         name: 'নতুন আবেদন অনুসন্ধান স্থিতি অনুসন্ধান (Online)',
         url: '/forms/checks-radios',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       }
@@ -115,7 +117,7 @@ export const navItems: INavData[] = [
     name: ' ই-হোল্ডিং বিষয়ক',
     icon: 'fa-solid fa-chart-column',  // Font Awesome icon
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     url: '/icons',
     children: [
@@ -123,7 +125,7 @@ export const navItems: INavData[] = [
         name: 'নতুন ই-হোল্ডিং জেনারেশন',
         url: '/icons/coreui-icons',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -131,7 +133,7 @@ export const navItems: INavData[] = [
         name: 'ই-হোল্ডিং এসেসমেন্ট',
         url: '/icons/flags',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -139,7 +141,7 @@ export const navItems: INavData[] = [
         name: 'এসেসমেন্ট ইতিহাস',
         url: '/icons/brands',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -147,7 +149,7 @@ export const navItems: INavData[] = [
         name: 'ই-হোল্ডিং নাম্বার অনুসন্ধান',
         url: '/icons/brands',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon 
       }
@@ -157,7 +159,7 @@ export const navItems: INavData[] = [
     name: 'আদায় সংগ্রহ',
     url: '/notifications',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     icon: 'fa-solid fa-chart-column',  // Font Awesome icon
     children: [
@@ -165,7 +167,7 @@ export const navItems: INavData[] = [
         name: 'এসেসমেন্ট পেমেন্ট এফেক্ট',
         url: '/notifications/alerts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -173,7 +175,7 @@ export const navItems: INavData[] = [
         name: 'আদায় সংগ্রহ',
         url: '/notifications/badges',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -181,7 +183,7 @@ export const navItems: INavData[] = [
         name: 'লেনদেনের বিবরণ',
         url: '/notifications/modal',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -189,7 +191,7 @@ export const navItems: INavData[] = [
         name: 'অন্যান্য লেনদেনের বিবরণ',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -197,7 +199,7 @@ export const navItems: INavData[] = [
         name: 'ব্যাংক কনফার্মেশন',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -205,7 +207,7 @@ export const navItems: INavData[] = [
         name: 'বকেয়া সেটেলমেন্ট',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -213,7 +215,7 @@ export const navItems: INavData[] = [
         name: 'সারচার্জ মওকুফ',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -221,7 +223,7 @@ export const navItems: INavData[] = [
         name: 'আংশিক আদায়',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -229,7 +231,7 @@ export const navItems: INavData[] = [
         name: '৭৫% প্রদান',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -237,7 +239,7 @@ export const navItems: INavData[] = [
         name: 'অন্যান্য আদায়',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       }  
@@ -247,7 +249,7 @@ export const navItems: INavData[] = [
     name: 'সেটিংস',
     url: '/notifications',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     icon: 'fa-solid fa-chart-column',  // Font Awesome icon
     children: [
@@ -255,7 +257,7 @@ export const navItems: INavData[] = [
         name: 'নতুন ব্যবহারকারী',
         url: '/notifications/alerts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet',  // Font Awesome icon
       },
@@ -263,7 +265,7 @@ export const navItems: INavData[] = [
         name: 'ইউজার এক্সেস কন্ট্রোল',
         url: '/notifications/badges',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -271,7 +273,7 @@ export const navItems: INavData[] = [
         name: 'ইউজার সমূহ',
         url: '/notifications/modal',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -279,7 +281,7 @@ export const navItems: INavData[] = [
         name: 'আদায় টার্গেট',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
@@ -287,7 +289,7 @@ export const navItems: INavData[] = [
         name: 'আপডেট পাসওয়ার্ড',
         url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       }
@@ -295,74 +297,74 @@ export const navItems: INavData[] = [
   },
   {
     name: 'রিপোর্ট',
-    url: '/login',
+    url: '/notifications/toasts',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     icon: 'fas fa-chart-bar',
     children: [
       {
         name: 'ই-হোল্ডিং নাম্বারের বিবরণ',
-        url: '/login',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'মোট আদায় বিবরণী',
-        url: '/register',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'আদায়ের লক্ষ্যমাত্রা',
-        url: '/404',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'আদায় বিবরণী',
-        url: '/500',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       }
       ,
       {
         name: 'বকেয়া পাওনার পরিমান',
-        url: '/500',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'বকেয়া কাস্টোমাইজ রিপোর্ট',
-        url: '/500',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'বার্ষিক কর পরিসংখ্যানের বিবরণ',
-        url: '/500',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'ত্রৈমাসিক ভিত্তিতে বকেয়া পাওনার পরিমান',
-        url: '/500',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       }
@@ -370,33 +372,33 @@ export const navItems: INavData[] = [
   },
     {
     name: 'নোটিশ',
-    url: '/login',
+    url: '/notifications/toasts',
     attributes: {
-      style: 'color: #609513; font-weight: 500; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
+      style: 'color: #609513; font-weight: 900; font-size: 13px; font-family: "Noto Sans Bengali", sans-serif;'
     },
     icon: 'fas fa-chart-bar',
     children: [
       {
         name: 'নোটিশ সমূহ',
-        url: '/login',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'বকেয়া বিল প্রিন্ট নোটিশ',
-        url: '/register',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       },
       {
         name: 'বিল প্রিন্ট সেটিং',
-        url: '/404',
+        url: '/notifications/toasts',
         attributes: {
-          style: 'color: #609513; font-weight: 500; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
+          style: 'color: #609513; font-weight: 900; font-size: 12px; font-family: "Noto Sans Bengali", sans-serif;'
         },
         icon: 'nav-icon-bullet'
       }
