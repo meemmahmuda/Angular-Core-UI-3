@@ -8,11 +8,11 @@
   visible
 >
   <c-sidebar-header class="border-bottom">
-    <c-sidebar-brand [routerLink]="[]">
+    <c-sidebar-brand [routerLink]="['/charts']">
       <!-- <svg [class]="{icon: false}" cIcon class="sidebar-brand-full" height="32" name="logo" title="CoreUI Logo"></svg> -->
 
-      <a class="paw" href=""><i style="color: #ffffff; z-index: 111;" class="fa-solid fa-paw"></i></a>
-      <span style="color: #ffffff;">রাজস্ব বিভাগ</span>
+      <a [routerLink]="['/charts']" class="paw" href=""><i style="color: #ffffff; z-index: 111;" class="fa-solid fa-paw"></i></a>
+      <span [routerLink]="['/charts']" style="color: #ffffff; cursor: pointer;">রাজস্ব বিভাগ</span>
 
       <!-- <svg cIcon class="sidebar-brand-narrow" height="32" name="signet" title="CoreUI Logo"></svg> -->
     </c-sidebar-brand>

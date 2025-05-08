@@ -34,8 +34,8 @@ export class ChartsComponent {
         label: 'Zone wise collection',
         data: [4134, 12087, 3651, 1501, 2428, 0, 31926, 57127, 71719, 70061, 70031],
         backgroundColor: [
-          '#f87979', '#f87979', '#4a90e2', '#f87979', '#f87979', '#f87979',
-          '#cccccc', '#cccccc', '#cccccc', '#cccccc', '#cccccc'
+          '#006266', '#833471', '#EA2027', '#D980FA', '#32ff7e', '#f87979',
+          '#0000e6', '#0000e6', '#0000e6', '#0000e6', '#0000e6'
         ]
       }
     ]
@@ -118,7 +118,7 @@ export class ChartsComponent {
   chartDoughnutData: ChartData = {
     datasets: [
       {
-        backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+        backgroundColor: ['#16a085', '#d35400', '#00D8FF', '#DD1B16'],
         data: [90, 10]
       }
     ]

@@ -17,3 +17,27 @@
     display: block;
     width: 100%;
 }
+
+.card-hover {
+    background-color: #ffffff;
+    width: 270px;
+    padding: 20px;
+    border-radius: 12px;
+    color: #000000;
+    text-align: left;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05);
+  }
+
+
+  .btn:hover{
+    color: #fff;
+  }
+  
+  
