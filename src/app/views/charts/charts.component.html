@@ -1,4 +1,4 @@
-<div style="display: flex; margin: auto; justify-content: space-between;  align-items: center; width: 80%;">
+<div class="dashboard-container" style="display: flex; margin: auto; justify-content: space-between;  align-items: center; width: 80%; flex-wrap: wrap;">
 
   <!-- Card 1 -->
   <div class="card-hover" style="background-color: #ffffff; width: 270px; padding: 20px; border-radius: 12px; color: #000000; text-align: left; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
@@ -10,7 +10,7 @@
   </div>
 
   <!-- Card 2 -->
-  <div class="card-hover" style="background-color: #d35400; width: 270px; padding: 20px; border-radius: 12px; color: #fff; text-align: left; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+  <div class="dashboard-container" class="card-hover" style="background-color: #d35400; width: 270px; padding: 20px; border-radius: 12px; color: #fff; text-align: left; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <h2 style="font-size: 1.2rem;">নতুন হোল্ডিং সংখ্যা</h2>
     <h4>৯৫৫৫৬</h4>
     <button [routerLink]="['/newholding']" class="moreinfo-btn" style="margin-top: 10px; background: none; border: none; color: #fff; cursor: pointer; text-align: right; font-size: 15px;">
@@ -20,7 +20,7 @@
 
   <!-- Doughnut Chart Card -->
   <div class="card-hover"style="background-color: #fff; width: 270px; border-radius: 12px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-    <c-chart type="doughnut" [data]="chartDoughnutData" [options]="options" style="max-height: 70x;" />
+    <c-chart type="doughnut" [data]="chartDoughnutData" [options]="options"/>
     <h6>আদায় / বকেয়া</h6>
     <div style="display: flex; justify-content: space-around;">
       <div style="display: flex; align-items: center; ">
@@ -38,7 +38,7 @@
 
 <br>
 
-  <div style="display: flex;  margin: auto; gap: 20px; width: 80%; margin-bottom: 30px;">
+  <div class="dashboard-container" style="display: flex;  margin: auto; gap: 20px; width: 80%; margin-bottom: 30px;">
 
     <!-- Chart Card -->
    
@@ -60,7 +60,7 @@
         </c-card-header>
         <c-card-body style="display: flex; min-height: 350px;">
 
-        <div style="display: flex; margin: auto; gap: 10px; justify-content: space-between; min-height: 350px; width: 100%;">
+        <div class="chart-container" style="display: flex; margin: auto; gap: 10px; justify-content: space-between; min-height: 350px; width: 100%;">
           <!-- Google Map -->
           <div>
             <iframe 

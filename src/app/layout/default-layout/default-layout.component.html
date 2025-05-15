@@ -1,5 +1,4 @@
 <!--sidebar-->
-
 <c-sidebar
   #sidebar1="cSidebar"
   class="d-print-none sidebar sidebar-fixed border-end"
@@ -7,14 +6,10 @@
   id="sidebar1"
   visible
 >
-  <c-sidebar-header class="border-bottom">
-    <c-sidebar-brand [routerLink]="['/charts']">
-      <!-- <svg [class]="{icon: false}" cIcon class="sidebar-brand-full" height="32" name="logo" title="CoreUI Logo"></svg> -->
-
-      <a [routerLink]="['/charts']" class="paw" href=""><i style="color: #ffffff; z-index: 111;" class="fa-solid fa-paw"></i></a>
-      <span [routerLink]="['/charts']" style="color: #ffffff; cursor: pointer;">রাজস্ব বিভাগ</span>
-
-      <!-- <svg cIcon class="sidebar-brand-narrow" height="32" name="signet" title="CoreUI Logo"></svg> -->
+  <c-sidebar-header class="border-bottom" style="background-color: #609513;">
+    <c-sidebar-brand [routerLink]="['/charts']" class="d-flex align-items-center">
+      <a [routerLink]="['/charts']" class="paw me-2" href=""><i style="color: #ffffff; font-size: 40px; border: 1px solid #ffffff; border-radius: 50%;  z-index: 111;" class="fa-solid fa-paw"></i></a>
+      <span [routerLink]="['/charts']" style="color: #ffffff; cursor: pointer; font-size: 1.2rem;">রাজস্ব বিভাগ</span>
     </c-sidebar-brand>
   </c-sidebar-header>
 
@@ -30,7 +25,7 @@
 </c-sidebar>
 
 <!--main-->
-<div class="wrapper ">
+<div class="wrapper d-flex flex-column min-vh-100">
   <!--app-header-->
   <app-default-header
     [cShadowOnScroll]="'sm'"
@@ -39,7 +34,7 @@
     sidebarId="sidebar1"
   />
   <!--app-body-->
-  <div class="">
+  <div class="body flex-grow-1">
     <c-container breakpoint="lg" class="h-auto px-4">
       <router-outlet />
     </c-container>

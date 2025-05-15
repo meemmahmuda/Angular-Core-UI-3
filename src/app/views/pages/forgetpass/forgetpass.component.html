@@ -1,68 +1,52 @@
+<!-- index.component.html -->
+<div style="background-image: url('../../../../assets/images/bg_main.png'); background-size: cover;" class="bg-light dark:bg-transparent min-vh-100 d-flex flex-column align-items-center justify-content-center full-bg">
 
-<div style="background-image: url('../../../../assets/images/bg_main.png'); background-size: cover;" class="bg-light dark:bg-transparent min-vh-100  flex-row align-items-center">
-
-    <div style="padding-top: 30px; display: flex; justify-content: center;">
-      <img src="assets/images/northlogo.png" alt="">
-    </div>
-  
-    <c-container breakpoint="md">
-      <c-row class="justify-content-center">
-        <c-col lg="12" xl="12">
-          <c-card-group >
-            <c-card class="p-2" style="background-color: #fff; max-width: 34%; margin: auto; margin-bottom: 200px;">
-              <c-card-body >
-                <form cForm>
-  
-                  <h1 style="color: #555; font-size: 32px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 40px;">North City Corporation</h1>
-  
-                  <p style="color: #555; font-size: 32px; font-weight: 400; font-family: 'PT Sans Narrow', sans-serif; text-align: center; margin-top: 20px;">e-Revenue Management</p>
-  
-                  <select style="background-color: #fff; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;" name="" id="">Select Section
-                    <option value="" >Select Section</option>
-                    <option value="" >Holding Tax</option>
-                    <option value="" >Market Salami-Rent</option>
-                    <option value="" >Tread License</option>
-                    <option value="" >Vehicle/Wheel Tax</option>
-                    <option value="" >Entertainment Tax</option>
-                    <option value="" >Other</option>
-                    <option value="" >Accounts</option>
-                  </select>
-  
-                  <c-input-group class="mb-3">
-                    <!-- <span cInputGroupText>
-                      <svg cIcon name="cilUser"></svg>
-                    </span> -->
-                    <input class="user" style="background-color: #eaeaea; color: #555; font-size: 19px; font-weight: 400; font-family: 'Arial'; padding: 10px; border-radius: 5px; margin-top: 20px; width: 100%;" autoComplete="username"  placeholder="Username" />
-                  </c-input-group>
-  
-                  <c-row>
-                    <c-col xs="12">
-                      <button class="login-btn" [routerLink]="['/otp-verification']">
-                        Generate OTP
-                      </button>
-                    </c-col>
-                    
-                  </c-row>
-                </form>
-              </c-card-body>
-            </c-card>
-            <!-- <c-card [ngStyle]="{'minWidth.%': 100}" class="text-white bg-primary py-5">
-              <c-card-body class="text-center">
-                <div>
-                  <h2>Sign up</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <button [active]="true" cButton class="mt-3" color="primary" routerLink="/register">
-                    Register Now!
-                  </button>
-                </div>
-              </c-card-body>
-            </c-card> -->
-          </c-card-group>
-        </c-col>
-      </c-row>
-    </c-container>
+  <!-- Logo -->
+  <div class="logo-wrapper">
+    <img src="assets/images/northlogo.png" alt="North City Logo" class="logo-img">
   </div>
-  
+
+  <!-- Login Card -->
+  <c-container breakpoint="md">
+    <c-row class="justify-content-center">
+      <c-col lg="12" xl="12">
+        <c-card-group>
+          <c-card class="login-card">
+            <c-card-body>
+              <form cForm>
+                <h1 class="form-title">North City Corporation</h1>
+                <p class="form-subtitle">e-Revenue Management</p>
+
+                <!-- Section dropdown -->
+                <select class="section-select">
+                  <option value="">Select Section</option>
+                  <option>Holding Tax</option>
+                  <option>Market Salami-Rent</option>
+                  <option>Trade License</option>
+                  <option>Vehicle/Wheel Tax</option>
+                  <option>Entertainment Tax</option>
+                  <option>Other</option>
+                  <option>Accounts</option>
+                </select>
+
+                <!-- Username input -->
+                <c-input-group class="mb-3">
+                  <input class="user-input" autocomplete="username" placeholder="Username" />
+                </c-input-group>
+
+                <!-- Button -->
+                <c-row>
+                  <c-col xs="12">
+                    <button class="login-btn" [routerLink]="['/otp-verification']">
+                      Generate OTP
+                    </button>
+                  </c-col>
+                </c-row>
+              </form>
+            </c-card-body>
+          </c-card>
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>

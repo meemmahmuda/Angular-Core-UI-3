@@ -1,58 +1,104 @@
-.user {
-    border: 0;
-    margin-top: 20px;
-    color: #000;
-    outline: none;
-    text-align: center;
-  
-    &::placeholder {
-      color: #555;
-      font-size: 19px;
-      font-family: Arial;
-      text-align: center;
-    }
+/* General card responsiveness */
+.responsive-card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 360px) {
+  .full-bg{
+    background-position: center;
   }
-  
-  .pass {
-    border: 0;
-    margin-top: 20px;
-    color: #000;
-    outline: none;
-    text-align: center;
-  
-    &::placeholder {
-      color: #555;
-      font-size: 19px;
-      font-family: Arial;
-      text-align: center;
-    }
+}
+
+@media (min-width: 768px) {
+  .responsive-card {
+    width: 60%;
   }
-  
-  .login-btn {
-    display: block;
-    margin: auto;
-    background-color: #127da7;
-    padding: 5px 35px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: #fff;
+}
+
+@media (min-width: 992px) {
+  .responsive-card {
+    width: 34%;
   }
-  
-  .forget-pass {
-    font-size: 16px;
-    color: #555;
-    background-color: transparent;
-    border: 0;
-    font-family: 'PT Sans Narrow', sans-serif;
-    padding-top: 30px;
-    display: block;
-    text-decoration: none;
-  
-    &:hover {
-      color: #127da7;
-    }
-  }
-  
+}
+
+/* Logo styling */
+.logo-wrapper {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logo-img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Input fields */
+.user,
+.pass,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 19px;
+  font-family: Arial;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #555;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  text-align: center;
+}
+
+.user::placeholder,
+.pass::placeholder {
+  color: #555;
+  text-align: center;
+}
+
+/* Button styling */
+.login-btn {
+  display: block;
+  margin: auto;
+  background-color: #127da7;
+  padding: 5px 35px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Forgot password */
+.forget-pass {
+  font-size: 16px;
+  color: #555;
+  background-color: transparent;
+  border: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding-top: 30px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.forget-pass:hover {
+  color: #127da7;
+}
+
+/* Form title and subtitle */
+.form-title,
+.form-subtitle {
+  color: #555;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}

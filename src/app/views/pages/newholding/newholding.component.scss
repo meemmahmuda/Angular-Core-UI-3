@@ -110,3 +110,19 @@ h3 {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
+@media (max-width: 576px) {
+  .holding-table th,
+  .holding-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .toggle-btn {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

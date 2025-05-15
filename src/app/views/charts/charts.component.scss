@@ -40,4 +40,26 @@
     color: #fff;
   }
   
-  
+    @media (max-width: 1199px) {
+    .dashboard-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dashboard-container .card-hover {
+      width: 90% !important;
+    }
+  }
+
+      @media (max-width: 422px) {
+    .chart-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dashboard-container .card-hover {
+      width: 90% !important;
+    }
+  }
